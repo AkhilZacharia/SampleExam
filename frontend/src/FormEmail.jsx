@@ -7,7 +7,7 @@ const FormEmail = ({ setView }) => {
   const Generate = async(e) => {
     e.preventDefault();
     console.log('hi...',email);
-    await axios.post('http://localhost:3000/email',{mail:email}).then((res)=>{
+    await axios.post('https://sampleexam-back.onrender.com/email',{mail:email}).then((res)=>{
         setView(true); 
         console.log(res.data);
         

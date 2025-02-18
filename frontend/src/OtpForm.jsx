@@ -9,7 +9,7 @@ const OtpForm = () => {
     const check = async (e) => {
         e.preventDefault();
         console.log('hi',otp);
-       await axios.post('http://localhost:3000/otp',{otp:otp}).then((res)=>{
+       await axios.post('https://sampleexam-back.onrender.com/otp',{otp:otp}).then((res)=>{
             console.log(res.data);
             
             if (res.data===true) {
