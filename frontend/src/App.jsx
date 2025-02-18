@@ -3,7 +3,7 @@ import FormEmail from "./FormEmail";
 import OtpForm from "./OtpForm";
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Success from './success';
+import Success from './Success';
 
 const App = () => {
   const [view,setView] = useState(false);
